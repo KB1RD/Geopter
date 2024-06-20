@@ -77,7 +77,7 @@ void TextViewDock::saveToFile()
     textFile.open(QIODevice::WriteOnly);
 
     QTextStream out(&textFile);
-    out << m_textEdit->toPlainText() << Qt::endl;
+    out << m_textEdit->toPlainText() << endl;
 
     textFile.close();
 }
